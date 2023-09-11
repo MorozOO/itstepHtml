@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol {
+        list-style: none;
+        counter-reset: number;
+      }
+
+      ol li::before {
+        content: counter(number) ') ';
+        counter-increment: number;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Placeat, sequi similique.</li>
+        <li>Fugit, magni labore!</li>
+        <li>Nihil, excepturi eum.</li>
+        <li>Voluptate, dignissimos quasi.</li>
+      </ol>
+    </div>
+  </body>
+</html>

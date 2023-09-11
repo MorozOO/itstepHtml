@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+.card {
+  width: 50%;
+  border: 1px solid #999;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-img {
+  height: 200px;
+  overflow: hidden;
+}

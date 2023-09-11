@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Work</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="block-picture">
+      <h2 class="block-picture__title">Встановлення картинки тегом <span>&lt;picture&gt;</span></h2>
+      <!-- Створити блок з картинкою, при ширені меньше 600px картинка була 600*400, 
+        при ширині екрану більше 600px до 900px картинка 900*600, 
+        а при  більше 900px картинка 1600*1200 -->
+      <div class="container">
+        <div class="picture-item">
+          <picture>
+            <source media="(max-width:600px)" srcset="img/400x600.jpg" type="image/jpeg">
+            <source media="(max-width:900px)" srcset="img/800x400.jpg" type="image/jpeg">
+            <source media="(max-width:1600px)" srcset="img/1600x1000.jpg" type="image/jpeg">
+            <img src="img/400x600.jpg" alt="img">
+          </picture>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="block-video">
+      <h2 class="block-video__title">Відео файли</h2>
+      <!-- Створити 3 блоки в ряд з відступом між ними, а в блоки добавити відеофайли -->
+      <div class="container">
+        <div class="video__item">
+          <video controls>
+            <source src="video/01 (video-converter.com).webm" type="video/webm">
+            <source src="video/01.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="video/02 (video-converter.com).webm" type="video/webm">
+            <source src="video/02.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="video/03 (video-converter.com).webm" type="video/webm">
+            <source src="video/03.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <section class="block-audio">
+      <h2 class="block-audio__title">Аудіо файли</h2>
+      <!-- Створити список за допомогою тега <ul>, і добавити декілька аудіо файлів   -->
+      <div class="container">
+        <div class="audio__item">
+
+          <ul>
+            <li>
+              <audio controls src="audio/okean_el_zi_-_kviti_minnih.m4a" type="audio/m4a"></audio>
+            </li>
+            <li>
+              <audio controls src="audio/okean_el_zi_-_kviti_minnih.mp2" type="audio/mp2"></audio>
+            </li>
+            <li>
+              <audio controls src="audio/okean_el_zi_-_kviti_minnih.mp3" type="audio/mp4"></audio>
+            </li>
+            <li>
+              <audio controls src="audio/okean_el_zi_-_kviti_minnih.wav" type="audio/wav"></audio>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block-geometric">
+      <h2 class="block-geometric__title">Створення геометричних фігур</h2>
+      <!-- Створити кватрат -->
+      <!-- Створити прямокутник -->
+      <!-- Створити круг -->
+      <!-- Створити овал -->
+      <!-- Створити трикутник -->
+      <!-- Створити паралелограм -->
+      <!-- Створити трапецію -->
+      <div class="container">
+        <div class="geometry">
+          <div class="geometry__item">
+            <div class="square"></div>
+          </div>
+          <div class="geometry__item">
+            <div class="rectangle"></div>
+          </div>
+          
+          <div class="geometry__item">
+            <div class="circle"></div>
+          </div>
+          <div class="geometry__item">
+            <div class="oval"></div>
+          </div>
+          <div class="geometry__item">
+            <div class="triangle"></div>
+          </div>
+          <div class="geometry__item">
+            <div class="parallelogram"></div>
+          </div>
+          <div class="geometry__item">
+            <div class="trapezoid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

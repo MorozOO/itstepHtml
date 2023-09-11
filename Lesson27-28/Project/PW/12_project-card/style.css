@@ -1,0 +1,58 @@
+.wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-content: center;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 11rem;
+  gap: 1rem;
+  box-shadow: 0 0 .625rem #746b50cb;
+  padding: 1.2rem;
+}
+
+.album__artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.album__details {
+}
+
+.album__artist {
+}
+
+.album__desc {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  .albums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .album {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .albums {
+    grid-template-columns:  1fr;
+  }
+  .album {
+  }
+  .album__artwork {
+  }
+  .album__details {
+  }
+}

@@ -1,0 +1,416 @@
+:root {
+  --fon-color: #fff;
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(46, 46, 46);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  scroll-padding-top: 9.375rem;
+}
+
+body {
+  background-color: var(--fon-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+}
+
+/* ============================== */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255);
+}
+
+.header__container {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+.header__info {
+  flex: 1 1 auto;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.header__title {
+  color: var(--title-color);
+  font-style: italic;
+  font-size: 3.125rem;
+}
+
+.header__subtitle {
+  color: var(--title-color);
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+@media (max-width: 61.25rem) {
+  .header__title {
+    font-size: calc(1.875rem + (50 - 30) * ((100vw - 20rem) / (1100 - 320)));
+  }
+
+  .header__subtitle {
+    font-size: calc(1.25rem + (50 - 20) * ((100vw - 20rem) / (1100 - 320)));
+  }
+}
+
+.header__menu {
+  flex: 0 1 21.875rem;
+  align-self: center;
+}
+
+.menu {}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: .625rem;
+  row-gap: .625rem;
+  list-style: none;
+}
+
+.menu__item {
+  padding: .625rem .9375rem;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  border-radius: 1.25rem;
+  box-shadow: 0rem 0rem .625rem green;
+}
+
+/* =============================== */
+
+.main {
+  padding-top: 12.5rem;
+}
+
+.main__task {}
+
+.task {}
+
+.task__container {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.task__description {
+  display: flex;
+  flex-direction: column;
+  padding: .625rem;
+}
+
+.task__description *:not(:last-child) {
+  margin-bottom: .625rem;
+}
+
+.task__description:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.task__title {
+  color: var(--title-color);
+  letter-spacing: .125rem;
+  font-weight: 900;
+  font-size: 1.375rem;
+}
+
+.task__text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.task__list {
+  margin-left: 3.125rem;
+}
+
+.task__item:not(:last-child) {
+  margin-bottom: .3125rem;
+}
+
+.task__implementation {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: .1875rem solid rgb(59, 15, 218);
+  min-height: 18.75rem;
+}
+
+@media (max-width: 28.125rem) {
+  .main {
+    padding-top: 18.75rem;
+  }
+}
+
+/* ============================================= */
+/* ! Код пишимо тут Task-1*/
+.bg-lightgray {
+  background: lightgray;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+  color: #fff;
+}
+
+.bg-gray {
+  background: gray;
+}
+
+.bg-green {
+  background: green;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.flexbox {
+  width: 100%;
+}
+
+.flexbox__items {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5625rem;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+}
+
+/* ! Код пишимо тут Task-1*/
+.task-1 .flexbox {
+  display: inline-flex;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.task-1 .flexbox__items {
+  flex: 0 0 9.375rem;
+
+  margin-block: 8.125rem;
+
+
+}
+
+.task-1 .flexbox__items:first-child {
+  flex: 1 1 9.375rem;
+}
+
+.task-1 .flexbox__items:last-child {
+  flex: 1 1 9.375rem;
+}
+
+
+/* ! Код пишимо тут Task-2*/
+.task-2 .flexbox {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.task-2 .flexbox__items {
+  width: 50%;
+  flex: 0 0 3.75rem;
+
+}
+
+.task-2 .flexbox__items:nth-child(1) {
+  align-self: flex-end;
+
+}
+
+.task-2 .flexbox__items:nth-child(2) {
+  align-self: center;
+}
+
+.task-2 .flexbox__items:nth-child(3) {
+  align-self: flex-start;
+}
+
+.task-2 .flexbox__items:nth-child(4) {
+  align-self: center;
+  margin-bottom: 4.375rem;
+}
+
+/* ! Код пишимо тут Task-3*/
+.task-3 .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9375rem;
+  padding: .9375rem;
+  justify-content: space-around;
+}
+
+.task-3 .flexbox__items {
+  flex: 0 0 12.5rem;
+  text-align: center;
+  border-radius: 3.125rem;
+  box-shadow: 0 0 .9375rem limegreen;
+}
+
+/* ! Код пишимо тут Task-4*/
+
+.task-4 {
+  padding-top: 6.25rem;
+}
+.task-4__header {
+  padding-block: 1.25rem;
+  background-color: #13a3d4;
+  min-height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.75rem;
+  padding-inline: 1.25rem;
+  font-weight: 600;
+  gap:3.125rem;
+ 
+}
+
+.task-4__logo {
+  color: #10390b;
+  font-size: 1.5625rem;
+}
+
+.task-4__nav ul {
+  list-style: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+  
+}
+
+
+/* ! Код пишимо тут Task-5*/
+.task-5 .carsd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow:auto;
+  
+}
+.task-5 .card{  
+  padding: .625rem;
+  width: 30%;
+  align-self: stretch;
+
+  border: .25rem solid rgb(151, 150, 150);
+  background-color: lightgrey;
+  justify-content: center;
+  color: gray;
+}
+
+/* ! Код пишимо тут Task-6*/
+.task-6__cards{
+ width: 100%;
+ display: flex;
+ gap: .625rem .625rem;
+ flex-wrap: wrap; 
+ justify-content: space-between;
+  
+}
+
+.task-6__card{ 
+  padding: .625rem;
+  flex: 1 1 31%;
+  border: .25rem solid rgb(151, 150, 150);
+  background-color: lightgrey;
+  justify-content: space-between;
+  color: gray;
+  
+}
+.task-6__card:nth-child(4), .task-6__card:last-child{
+  flex: 1 1 31%;
+}
+
+/* ! Код пишимо тут Task-7*/
+.task-7__cards{
+  width: 100%;
+  display: flex;
+  gap: .625rem .625rem;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+   
+ }
+ 
+ .task-7__card{ 
+   padding: .625rem;
+   width: 32%;
+   border: .25rem solid rgb(151, 150, 150);
+   background-color: lightgrey;
+   justify-content: space-between;
+   color: gray;
+   
+ }
+
+
+/* ! Код пишимо тут Task-8*/
+.task-8__cards{
+  width: 100%;
+  display: flex;
+  gap: .625rem .625rem;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+   
+ }
+ 
+ .task-8__card{ 
+  padding: .625rem;
+   border: .25rem solid rgb(151, 150, 150);
+   width: 30%;
+   background-color: lightgrey;
+   justify-content: space-between;
+   color: gray;
+   
+ }
+ .task-8__card:nth-child(2n){ 
+  flex: 1 0 50%;
+  /* width: 68%; */
+ }

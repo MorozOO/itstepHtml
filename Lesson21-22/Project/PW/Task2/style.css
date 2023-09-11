@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 100px 10px 40px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.progresBar{
+    height: 50px;
+    width: 150px;
+    border: 3px solid orange;
+
+
+}
+.progress{
+    display: flex;
+    height: 47px;
+    width: 47px;
+    background-color: orange;
+    animation: progressAnim 2s alternate infinite ;
+
+}
+
+@keyframes progressAnim {
+  from{
+
+  }
+  to{
+    transform: translateX(97px) ;
+  }
+}

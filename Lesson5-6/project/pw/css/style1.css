@@ -1,0 +1,34 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h2{
+    font-weight: 700;
+}
+.arrow li{
+    list-style: none;
+}
+.arrow > li::before{
+    content: "";
+    background: url(/project/pw/icons/arrow_forward_right.png) center / 10px no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.winter li{
+    list-style-image: url(/project/pw/icons/winter_16.png);
+    margin-left: 19px;
+}
+.spring li{
+    list-style-image: url(/project/pw/icons/spring_16.png);
+    margin-left: 19px;
+}
+.summer li{
+    list-style-image: url(/project/pw/icons/summer_16.png);
+    margin-left: 19px;
+}
+.autumn li{
+    list-style-image: url(/project/pw/icons/autumn_16.png);
+    margin-left: 19px;
+}

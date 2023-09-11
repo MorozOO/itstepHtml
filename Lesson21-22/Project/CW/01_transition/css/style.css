@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 40px 10px 40px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn {
+  text-align: center;
+  min-width: 300px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #003fa3;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 15px 25px;
+}
+
+.btn-1 {
+  background-color: red;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-delay: 0.3s;
+  transition-timing-function: ease;
+}
+.btn-1:hover {
+  background-color: rgb(211, 56, 56);
+}
+
+.btn-2 {
+  background-color: gray;
+  color: palevioletred;
+  transition: 0.8s ease-in-out;
+}
+.btn-2:hover {
+  background-color: rgb(14, 13, 13);
+  color: rgb(211, 211, 211);
+}
+
+.btn-3 {
+}
+.btn-3:hover {
+}
+
+/* https://cubic-bezier.com/#.17,.67,.83,.67 */
+
+/* =========================== */
+
+.timing-function {
+  margin-top: 100px;
+}
+
+.block {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  border-radius: 20px;
+  transition-property: width;
+  transition-duration: 3s;
+}
+
+.block:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ease {
+  color: rgb(15, 28, 148);
+  background-color: greenyellow;
+  transition-timing-function: ease;
+}
+.ease-in {
+  color: rgb(148, 15, 130);
+  background-color: rgb(47, 206, 255);
+  transition-timing-function: ease-in;
+}
+.ease-in-out {
+  color: rgb(15, 139, 148);
+  background-color: rgb(16, 24, 5);
+  transition-timing-function: ease-in-out;
+}
+.ease-out {
+  color: rgb(15, 148, 15);
+  background-color: rgb(177, 228, 101);
+  transition-timing-function: ease-out;
+}
+.linear {
+  color: rgb(15, 28, 148);
+  background-color: rgb(137, 47, 255);
+  transition-timing-function: linear;
+}
+.steps {
+  color: rgb(15, 28, 148);
+  background-color: rgba(255, 47, 47, 0.514);
+  transition-timing-function: steps(3, start);
+}
+.cubic-dezier {
+  color: rgb(15, 148, 59);
+  background-color: greenyellow;
+  transition-timing-function: cubic-bezier(0.59, 0.22, 0.76, 0.48);
+}
+
+.timing-function:hover .block {
+  width: 800px;
+}

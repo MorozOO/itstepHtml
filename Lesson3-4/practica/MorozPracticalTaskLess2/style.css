@@ -1,0 +1,66 @@
+
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    line-height: 1.5;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.main-title{
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing:5px;
+    color: #14104e;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: hsla(0, 100%, 50%, 0.315);
+}
+.green-shadow{
+    text-shadow: 2px 1px 5px green;
+}
+.crossed-out-text{
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-transform: capitalize;
+}
+.sub-title{
+    font-weight: 600;
+    color: #184912;
+    font-size: 22px;
+    text-decoration: dashed;
+}
+.underlined-red-text{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+    text-transform: lowercase;
+}
+
+.upper-text{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.yellow-text{
+    color: rgb(173, 145, 18);
+}
+.green-text{
+    color: green;
+}
+.red-text{
+    color: red;
+}
+.blueviolet-text{
+    color: blueviolet;
+}
+.dark-green-text{
+    color: darkgreen;
+}
+.dark-blueviolet-text{
+    color: darkslateblue;
+}

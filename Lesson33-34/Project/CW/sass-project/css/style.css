@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+:root {
+  --color-gray: gray;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  padding: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px green;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .card {
+    background-color: red;
+  }
+}
+.card__title {
+  font-size: 1.875rem;
+}
+.card__image {
+  height: 320px;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  background-color: goldenrod;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  color: white;
+}
+.card__btn:hover {
+  background-color: gold;
+}
+.card__btn-1 {
+  animation-name: anim-uul4ory;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim-uul4ory {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+.card__btn-2 {
+  animation-name: anim-uul4osm;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim-uul4osm {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+.card__btn-3 {
+  animation-name: anim-uul4osz;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim-uul4osz {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}/*# sourceMappingURL=style.css.map */

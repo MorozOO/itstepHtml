@@ -1,0 +1,41 @@
+.wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+.albums {
+}
+
+.album {
+}
+
+.album__artwork img {
+}
+
+.album__details {
+}
+
+.album__artist {
+}
+
+.album__desc {
+}
+
+@media screen and (max-width: 980px) {
+  .albums {
+  }
+  .album {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .albums {
+  }
+  .album {
+  }
+  .album__artwork {
+  }
+  .album__details {
+  }
+}

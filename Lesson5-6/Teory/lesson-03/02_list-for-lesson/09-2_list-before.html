@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List :before</title>
+    <style>
+        
+        body {
+            width: 80%;
+            margin: auto;
+            font: 18px 'Bookman Old Style', serif;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        p:before,
+        p:after {
+            background-color: #ccc;
+        }
+
+        p:before {
+            content: 'Start';
+        }
+
+        p:after {
+            content: "End";
+        }
+
+        ol {
+            list-style-type: none;
+            counter-reset: number;
+        }
+
+        ol li::before {
+            content: counter(number) ') ';
+            counter-increment: number;
+        }
+
+        ul {
+            list-style-type: none;
+            font-style: italic;
+        }
+
+        ul li::before {
+            content: '- ';
+            color: #04b548;           
+        }
+    </style>
+</head>
+
+<body>
+    <h1>::before and ::after</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui quod eius, vitae accusamus eveniet! Ipsum doloribus dolore sed numquam!</p>
+    <p>Quas quia veniam autem delectus, non repellat consequatur, amet corporis ullam odit deserunt, ab itaque ipsam assumenda aliquid. Nulla, qui.</p>
+    
+    <h2>Rotational motion</h2>
+    <ol>
+        <li>Angular momentum (Introduction)</li>
+        <li>Angular velocity</li>
+        <li>Centrifugal force</li>
+        <li>Centripetal force</li>
+        <li>Circular motion</li>
+        <li>Tangential velocity</li>
+        <li>Torque</li>
+    </ol>
+    <h2>Conservation of energy and momentum</h2>
+    <ul>
+        <li>Conservation of energy</li>
+        <li>Elastic collision</li>
+        <li>Energy</li>
+        <li>Inelastic collision</li>
+        <li>Inertia</li>
+        <li>Kinetic energy</li>
+        <li>Moment of inertia</li>
+        <li>Momentum</li>
+        <li>Potential energy</li>
+        <li>Rotational energy</li>
+    </ul>
+</body>
+</html>

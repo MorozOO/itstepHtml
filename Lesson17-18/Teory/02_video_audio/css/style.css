@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-top: 30px;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.videos {
+}
+.video {
+}
+.video video {
+  max-width: 100%;
+}
+.video iframe {
+}

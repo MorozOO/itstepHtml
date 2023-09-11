@@ -1,0 +1,19 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h3{
+    font-weight: 300;
+}
+dt{
+    font-style: italic;
+}
+.black{
+    color: black;
+}
+.gray{
+     color: rgba(0, 0, 0, 0.507);
+}
+.violet{
+     color: rgb(112, 23, 184);
+}

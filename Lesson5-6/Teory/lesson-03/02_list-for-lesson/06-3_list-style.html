@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS property list-style</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 80%;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 24px;
+        color: rgb(0, 89, 209);
+      }
+
+      .actors {
+        list-style: url("markers/actor-icon.png");
+      }
+
+      .actress {
+        list-style: url("markers/actress-icon.png");
+        font-style: italic;
+        color: #657;
+      }
+      .comedy {
+        list-style: upper-latin inside;
+      }
+
+      .all {
+        list-style: disc inside url("markers/arr.gif");
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>List of actors in the movie "The Best Offer" (2013)</h2>
+    <ol class="actors">
+      <li>Geoffrey Rush — Virgil Oldman — the main role</li>
+      <li>Jim Sturgess — Robert — the main role</li>
+      <li class="actress">Sylvia Hoeks — Claire — the main role</li>
+      <li>Donald Sutherland — Billy</li>
+      <li>Philip Jackson — Fred</li>
+      <li>Dermot Crowley — Lambert</li>
+      <li class="actress">Liya Kebede — Sarah</li>
+      <li>Kiruna Stamell — girl in the bar</li>
+      <li>John Benfield — Barman</li>
+      <li>Klaus Tauber — Virgil's Assistant</li>
+      <li>Maximilian Dirr — Virgil's Assistant</li>
+      <li>Gen Seto — housekeeper</li>
+      <li class="actress">Sylvia De Fanti — manager of the gallery</li>
+    </ol>
+    <hr />
+    <h2>2017 Comedies</h2>
+
+    <ol class="comedy">
+      <li>Mes trésors</li>
+      <li>Wakefield</li>
+      <li>Si j'étais un homme</li>
+      <li>Mein Blind Date mit dem Leben</li>
+      <li>Once Upon a Time in Venice</li>
+      <li>Telle mère, telle fille</li>
+      <li>Kung Fu Yoga</li>
+      <li>All Nighter</li>
+      <li>The Hippopotamus</li>
+      <li>The Hitman's Bodyguard</li>
+      <li>Cherchez la femme</li>
+      <li>Home Again</li>
+      <li>Alibi.com</li>
+      <li>Kingsman: The Golden Circle</li>
+      <li>Avant la fin de l'été</li>
+      <li>A Few Less Men</li>
+    </ol>
+    <hr />
+
+    <h2>Fundamental values of the center</h2>
+    <ul class="all">
+      <li>Responsibility</li>
+      <li>Loyalty to principles</li>
+      <li>Creativity</li>
+      <li>Efficiency</li>
+      <li>Quality</li>
+      <li>Professionalism</li>
+      <li>Innovation</li>
+      <li>Teamwork</li>
+    </ul>
+  </body>
+</html>

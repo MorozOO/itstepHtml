@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 100px 10px 40px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+img{
+  animation: beat 3s alternate infinite;
+}
+@keyframes beat {
+  from{
+    filter: grayscale(1);
+  }
+  to{
+    transform: scale(2);
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  font-size: 17px;
+  text-align: center;
+}
+p {
+  font-weight: 700;
+  font-size: 30px;
+}
+.block-1 {
+  width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  background: url("../img/01.jpeg") center / cover no-repeat;
+}
+.blur {
+  filter: blur(2px);
+}
+.brightness {
+  filter: brightness(50%);
+}
+.contrgjhyjast {
+  filter: contrast(150%);
+}
+.grayscale {
+  filter: grayscale(1);
+}
+.huerotate {
+  filter: hue-rotate(50deg);
+}
+.invert {
+  filter: invert(40%);
+}
+.opacity {
+  /* opacity: 50%; */
+  filter: opacity(50%);
+}
+.saturate {
+  filter: saturate(2);
+}
+.sepia {
+  filter: sepia(20%);
+}
+.shadow {
+  filter: drop-shadow(8px 8px 10px green);
+}

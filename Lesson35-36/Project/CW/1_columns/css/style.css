@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding-top: 6.25rem;
+  width: min(100% - 1rem, 75rem);
+  margin-inline: auto;
+}
+
+.article-title {
+  -moz-column-span: all;
+       column-span: all;
+  color: green;
+  font-size: 2.125rem;
+  margin-block: 0.5rem;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.article {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.article span {
+  color: blue;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.container-article {
+  -moz-columns: 4 18.75rem;
+       columns: 4 18.75rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  -moz-column-rule: 0.625rem dotted brown;
+       column-rule: 0.625rem dotted brown;
+}/*# sourceMappingURL=style.css.map */

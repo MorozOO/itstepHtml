@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.header {
+    background: #923059;
+    margin-top: 10px;
+    padding-block: 20px;
+    padding-left: 50px;
+}
+
+.menu {
+    background: #6e1237;
+    margin-block: 10px;
+    padding-block: 12px;
+    padding-left: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    
+}
+.aside{
+    width:200px ;
+}
+.aside1 {
+    background: #b65c82;
+    margin-bottom: 10px;
+    padding-block: 25px;
+    padding-left: 50px;
+}
+
+.aside2 {
+    background: #b65c82;
+    padding-block: 25px;
+    padding-left: 50px;
+    height: 100px;
+}
+
+.aside3 {
+    background:#b65c82 ;
+    width:100px ;
+    padding-block: 35px;
+    padding-top: 20px;
+    height: 190px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.main {
+    background:#b65c82;
+    width:700px ;
+    /* padding-left: 50px; */
+    height: 300px;
+    padding-inline: 50px;
+    padding-top: 20px;
+}
+
+.section {
+    background: #db92af;
+    padding-left: 50px;
+    height: 75px;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.footer {
+    margin-top: 10px;
+    background: #6e1237;
+    padding-block: 12px;
+    padding-left: 50px;
+}
+span{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}

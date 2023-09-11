@@ -1,0 +1,48 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ul{ 
+    list-style: none;
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+li{
+    padding: 8px 20px;
+    
+}
+li::after{
+    content: " ";
+    background: url('../icons/icons8-cross-10.png');
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+li::before{
+    content: " ";
+    background: url('../icons/unchecked_16.png');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.steamy{
+    background-color: rgb(155, 208, 233);
+}
+.odd{
+    background-color: rgb(131, 173, 192);
+}
+.done{
+    background-color: rgba(171, 187, 194, 0.541);
+    text-decoration: line-through;
+}
+.done::before{
+    content: " ";
+    background: url('../icons/checked_16.png');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}

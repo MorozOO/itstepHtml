@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Вибір авіарейсу</title>
+</head>
+<body>
+    <header>
+        <h1>Вибір авіарейсу</h1>
+    </header>
+
+    <section class="search-form">
+        <h2>Пошук авіарейсу</h2>
+        <form>
+            <label for="departure-city">Місто відправлення:</label>
+            <input type="text" id="departure-city" name="departure-city" required>
+
+            <label for="arrival-city">Місто прибуття:</label>
+            <input type="text" id="arrival-city" name="arrival-city" required>
+
+            <label for="departure-date">Дата відправлення:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+
+            <label for="arrival-date">Дата прибуття:</label>
+            <input type="date" id="arrival-date" name="arrival-date" required>
+
+            <label for="service-class">Клас обслуговування:</label>
+            <select id="service-class" name="service-class">
+                <option value="economy">Економ</option>
+                <option value="business">Бізнес</option>
+                <option value="first-class">Перший клас</option>
+            </select>
+
+            <button type="submit">Знайти рейси</button>
+        </form>
+    </section>
+
+    <section class="filters">
+        <h2>Фільтри</h2>
+        <!-- Додайте фільтри за кількістю зупинок, ціною та авіакомпанією тут -->
+    </section>
+
+    <section class="flight-list">
+        <h2>Список рейсів</h2>
+        <!-- Додайте список рейсів тут з назвою авіакомпанії, часом відправлення, тривалістю польоту, часом прибуття та ціною -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ваша авіакомпанія. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

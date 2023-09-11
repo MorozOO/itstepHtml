@@ -1,0 +1,255 @@
+* {
+  font: inherit;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* :root {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 20px;
+  }
+} */
+
+body {
+}
+
+strong {
+  font-weight: 700;
+}
+
+.wrapper {
+  padding: 15px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+/* ============================================= */
+
+.title-px {
+  font-size: 36px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.card-px {
+}
+.card__body-px {
+}
+.card__title-px {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.card__content-px {
+}
+.card__text-px {
+  margin-bottom: 20px;
+}
+.card__button-px {
+  padding: 15px 20px;
+  font-size: 30px;
+}
+.card__button-px-1 {
+  font-size: 50px;
+}
+.button-px {
+  padding: 15px 20px;
+}
+.list-px {
+  font-size: 11px;
+}
+
+/* ======================================= */
+
+.title-em {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+.card-em {
+}
+.card__body-em {
+}
+.card__title-em {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.card__content-em {
+}
+.card__text-em {
+  margin-bottom: 1em;
+}
+.button-em {
+  padding: 0.5em 1em;
+}
+.card__button-em {
+  font-size: 24px;
+  padding: 0.5em 1em;
+}
+.card__button-em-1 {
+  font-size: 36px;
+  padding: 0.5em 1em;
+}
+.list-em-1 {
+  font-size: 1.5em;
+}
+.list-em-2 {
+  font-size: 1.5em;
+}
+.list-em-3 {
+  font-size: 1.5em;
+}
+
+.conteiner-flex {
+  display: flex;
+  gap: 30px;
+}
+.elemen-1 {
+  background-color: red;
+  width: 10em;
+  height: 10em;
+}
+.elemen-2 {
+  font-size: 50px;
+  background-color: green;
+  width: 10em;
+  height: 10em;
+}
+
+/* ================================ */
+
+.title-rem {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card-rem {
+}
+.card__body-rem {
+}
+.card__title-rem {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card__content-rem {
+}
+.card__text-rem {
+  margin-bottom: 1rem;
+}
+.button-rem {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+.card__button-rem {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.card__button-rem-1 {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+.list-rem-1 {
+  font-size: 1.5rem;
+}
+.list-rem-2 {
+  font-size: 1.5rem;
+}
+.list-rem-3 {
+  font-size: 1.5rem;
+}
+
+/* ===================================== */
+
+.title-procent {
+  font-size: 200%;
+  margin-bottom: 10%;
+  line-height: 2;
+}
+.card-procent {
+}
+
+.card__body-procent {
+}
+
+.card__title-procent {
+  font-size: 150%;
+  margin-bottom: 4%;
+}
+
+.card__content-procent {
+}
+
+.card__text-procent {
+  margin-bottom: 4%;
+}
+
+.button-procent {
+  font-size: 120%;
+  padding: 1% 2%;
+}
+
+.card__button-procent {
+  font-size: 180%;
+  padding: 1% 2%;
+}
+
+.card__button-procent-1 {
+  font-size: 250%;
+  padding: 1% 2%;
+}
+
+.list-procent-1 {
+  font-size: 150%;
+}
+.list-procent-2 {
+  font-size: 150%;
+}
+.list-procent-3 {
+  font-size: 150%;
+}
+
+/* ====================================== */
+
+.title-viewport {
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+  margin-bottom: 5vh;
+}
+.card-viewport {
+}
+.card__body-viewport {
+}
+.card__title-viewport {
+  font-size: 2vw;
+  margin-bottom: 3vh;
+}
+.card__content-viewport {
+}
+.card__text-viewport {
+  font-size: 2vmin;
+  margin-bottom: 2vmin;
+}
+.button-viewport {
+  font-size: 2vmax;
+  padding: 2vmax 3vmax;
+}
+.card__button-viewport {
+  font-size: 2vmin;
+  padding: 2vmin 3vmin;
+}
+
+.list-viewport-1 {
+  font-size: 2vh;
+}
+.list-viewport-2 {
+  font-size: 3vh;
+}
+.list-viewport-3 {
+  font-size: 4vh;
+}

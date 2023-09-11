@@ -1,0 +1,81 @@
+.block-1 {
+    box-sizing: border-box;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    /* border : товщина тип лінії колір */
+    border-left: 15px solid red;
+    border-right: 15px dashed green;
+    border-top: 15px double purple;
+    border-bottom: 15px ridge orange;
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+.block-2 {
+    box-sizing: content-box;
+    background-color: yellow;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 15px groove cyan;
+    border-radius: 50%;
+}
+
+.block-3 {
+    box-sizing: border-box;
+    background-color: blue;
+    max-width: 800px;
+    min-width: 600px;
+    min-height: 600px;
+    /* max-height: 800px; */
+    padding: 20px;
+   
+    border-left: 15px solid red;
+    border-right: 15px dashed green;
+    border-top: 15px double purple;
+    border-bottom: 15px ridge orange;
+}
+/* .cards{
+    overflow: hidden;
+} */
+.cards::after{
+    content: "";
+    display:block;
+    clear: both;    
+}
+.container{
+    min-width: 1000px;
+    margin-inline: auto;
+    /* margin: 0 auto; */
+}
+.card{
+    display: inline-block;
+     /* float: left; */
+     border: 1px solid #28ad0d;
+     padding: 16px;
+     margin-bottom: 32px;
+     margin-right: 2%;
+     box-shadow: 6px 9px 20px grey;
+     border-radius: 24px;
+     width: 31%;
+}
+.another-block{
+    min-height: 300px;
+    background-color: #28ad0d;
+}
+.youtube{
+    display: inline-block;
+    background-color: red;
+    padding: 30px 60px;
+    border-radius: 20px;
+}
+.youtube span{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}

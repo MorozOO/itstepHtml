@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- https://gradienty.xyz -->
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="form">
+      <h3 class="form-title">First form</h3>
+      <div class="input-element">
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="input name" name="username" required>
+      </div>
+      <div class="input-element">
+        <label for="password">Your password</label>
+        <input id="password" type="password" placeholder="input password" name="userpassword">
+      </div>
+      <div class="input-element">
+        <label for="useremail">email</label>
+        <input id="useremail" type="email" placeholder="input email" name="useremail">
+      </div>
+      <div class="input-element">
+        <label for="message">message</label>
+        <textarea name="message" id="message" placeholder="input message"></textarea>
+      </div>
+
+      <div class="input-element">
+        <h4>Your gender</h4>
+        <div class="radio_container">
+          <div class="radio_input">
+            <input id="male"  type="radio" name="gender" value="male">
+            <label for="male">He</label>
+          </div>
+          <div class="radio_input">
+            <input id="female" type="radio" name="gender" value="female">
+            <label for="female">She</label>
+          </div>
+          <div class="radio_input">
+            <input id="other" type="radio" name="gender" value="other" checked>
+            <label for="other">They</label>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="input-element">
+        <h4>ваше Майно</h4>
+        <div class="checkbox-container">
+          <div class="checkbox_input">
+            <input id="flat"  type="checkbox" name="gender" value="yes" checked>
+            <label for="flat">flat</label>
+          </div>
+          <div class="checkbox_input">
+            <input id="car" type="checkbox" name="gender" value="yes">
+            <label for="car">car</label>
+          </div>
+          <div class="checkbox_input">
+            <input id="earth" type="checkbox" name="gender" value="yes">
+            <label for="earth">earth</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-element">
+        <label for="salery">Рівень зарплати</label>
+        <select name="levelsalery" id="salery">
+          <option value="4000">4000&#8372</option>
+          <option value="8000" selected>8000&#8372</option>
+          <option value="12000">12000&#8372</option>
+          <option value="16000">16000&#8372</option>
+          <option value="20000">20000&#8372</option>
+        </select>
+      </div>
+
+      <!-- <input type="submit"  name="Enter">
+        <input type="reset"  name="Reset"> -->
+        <div class="formbutton">
+          <button type="submit">Enter</button>
+          <button type="reset">Reset</button>
+        </div>
+    </form>
+  </div>
+</body>
+
+</html>

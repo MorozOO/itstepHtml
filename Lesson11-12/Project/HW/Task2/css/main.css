@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+.nav{
+    margin: 30px;
+    width: 12.5rem;
+    
+}
+.nav__item{
+    margin-inline: .9375rem;
+    padding-block: 20px;
+    text-transform: uppercase;
+}
+
+.nav__item:nth-child(1){
+    background: gray url("../img/edit.png") left center / 2.5rem 2.5rem no-repeat;
+    padding-left: 2.5rem;
+}
+.nav__item:nth-child(n):hover{
+    background-color:rgb(82, 81, 81);
+}
+.nav__item:nth-child(2){
+    background: gray url("../img/favorites.png") left center / 2.5rem 2.5rem no-repeat;
+    padding-left: 2.5rem;
+}
+.nav__item:nth-child(3){
+    background: gray url("../img/history.png") left center / 2.5rem 2.5rem no-repeat;
+    padding-left: 2.5rem;
+}
+.nav__item:nth-child(4){
+    background: gray url("../img/security.png") left center / 2.5rem 2.5rem no-repeat;
+    padding-left: 2.5rem;
+}
+.nav__item:nth-child(5){
+    background: gray url("../img/settings.png") left center / 2.5rem 2.5rem no-repeat;
+    padding-left: 2.5rem;
+}
+a{
+    padding: 1.25rem;    
+    text-decoration: none;
+    color: #fff;
+}

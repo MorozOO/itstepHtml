@@ -1,0 +1,19 @@
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ol{
+    background-color: rgba(238,158,175,255);
+    padding: 20px;
+    list-style-position: inside;
+    color: white;
+}
+ol li{
+    background-color: rgba(198,99,119,255);
+    margin: 10px;
+    padding: 10px;
+}
+span{
+    background-color: rgba(158,53,75,255);
+    padding: 10px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Многоуровневый список</title>
+    <style>
+      body {
+        width: 80%;
+        margin: auto;
+        font: 18px Calibri, Tahoma, sans-serif;
+      }
+      ol {
+        list-style-type: decimal-leading-zero;
+      }
+      ol ol {
+        list-style-type: lower-alpha;
+      }
+      ol ol ul {
+        list-style-image: url("markers/musseum.png");
+      }
+      .church {
+        list-style-image: url("markers/church.png");
+      }
+      .building {
+        list-style-image: url("markers/building.png");
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Attractions of famous cities of the world</h1>
+    <ol>
+      <li>
+        Attractions in Paris
+        <ol>
+          <li>Eiffel Tower</li>
+          <li>Notre Dame de Paris</li>
+          <li>Triumphal Arch</li>
+          <li>The National Residence of the Invalids</li>
+          <li>Sacre Coeur</li>
+          <li>Pantheon</li>
+          <li>Alexander III Bridge</li>
+          <li>The Louvre</li>
+          <li>Conciergerie</li>
+          <li>The Tower of Montparnasse</li>
+          <li>Champs-Elysées</li>
+        </ol>
+      </li>
+      <li>
+        Attractions in Rome
+        <ol>
+          <li>Appian Way</li>
+          <li>Arch of Constantine</li>
+          <li>Villa Borghese</li>
+          <li>Borghese Gallery</li>
+          <li>Spanish Steps</li>
+          <li>Capitol Hill</li>
+          <li>Coliseum</li>
+          <li>Vatican Museum Complex</li>
+          <li>Palatine</li>
+          <li>Pantheon</li>
+          <li>
+            Squarea
+            <ul class="building">
+              <li>Piazza di Spagna</li>
+              <li>Piazza Navona</li>
+              <li>St. Peter's Square</li>
+              <li>Piazza del Popolo</li>
+            </ul>
+          </li>
+
+          <li>Roman forum</li>
+          <li>
+            Cathedrals
+            <ul class="church">
+              <li>Santa Maria Maggiore</li>
+              <li>The Sistine Chapel</li>
+              <li>Saint Paul's Cathedral</li>
+              <li>Raphael's Staats</li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        Attractions in Venice
+        <ul>
+          <li>Academy Gallery</li>
+          <li>Grand Canal</li>
+          <li>Ca'd'Oro</li>
+          <li>Café Florian in Venice</li>
+          <li>Bridge of Sighs</li>
+          <li>Rialto Bridge</li>
+          <li>Piazza San Marco</li>
+          <li>The Doges Palace</li>
+        </ul>
+      </li>
+      <li>
+        Attractions in Warsaw
+        <ol>
+          <li>
+            Squares
+            <ul class="building">
+              <li>Palace Square</li>
+              <li>Market Square</li>
+            </ul>
+          </li>
+          <li>
+            Castles
+            <ul>
+              <li>Royal Castle</li>
+              <li>Wilanów Palace</li>
+            </ul>
+          </li>
+          <li>Stare Miasto</li>
+          <li>
+            Музеи
+            <ul>
+              <li>Historical Museum</li>
+              <li>Polish Army Museum</li>
+              <li>Cartoon Museum</li>
+              <li>Marie Curie Museum</li>
+              <li>Chopin Museum</li>
+              <li>National Museum</li>
+            </ul>
+          </li>
+          <li>Krakowskie Przedmieście</li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>

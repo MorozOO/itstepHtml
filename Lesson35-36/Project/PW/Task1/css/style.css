@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.article-container{
+    columns: 3;
+    column-gap: 1.875rem;
+    column-rule: .625rem double green ;
+}
+.article-title{
+    column-span: all;
+    background-color: rgb(77, 124, 77);
+    color: #fff;
+    text-align: center;
+    padding-block: 1.25rem;
+    border-radius: 100px;
+    margin-block: 1.5rem;
+}
+.article{
+    word-spacing: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+
+}
+.article span{
+    color: red;
+    font-weight: 600;
+    font-size: 1.125rem;
+}

@@ -1,0 +1,37 @@
+Mathematical formulas
+
+Linear Equations
+
+A linear equation is any equation that can be written in the form
+
+  ax + b = 0  
+
+where a and b are real numbers and x is a variable. This form is sometimes called the standard form of a linear equation. Note that most linear equations will not start off in this form. Also, the variable may or may not be an x so don’t get too locked into always seeing an x there.
+
+Quadratic Equation
+
+The standard form of a quadratic equation looks like this:
+
+  ax^2 + bx + c = 0  
+
+where a, b, c are known values and x is the variable or unknown (we don't know it yet). Also, a can't be 0.
+
+The area of a circle (A)
+
+[sign] (Pi) times the radius (r) squared:
+
+  A = [sign] [sign] r^2  
+
+or, when you know the diameter (D):
+  A = [sign] / 4) [sign] D^2  
+
+or, when you know the circumference (C):
+  A = C^2 / 4 [sign] [sign] 
+
+Intersection
+
+The intersection of two sets A and B, denoted by A [sign] B, is the set of all objects that are members of both the sets A and B. In symbols,
+
+  A [sign] B = { x : x [sign] A and x [sign] B }  
+
+That is, x is an element of the intersection A [sign] B if and only if x is both an element of A and an element of B.

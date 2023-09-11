@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>List Style Position</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, sans-serif;
+        width: 80%;
+        margin: auto;
+      }
+
+      code {
+        display: inline-block;
+        background-color: #e2e2e2;
+        padding: 7px;
+        font-family: "Courier New", monospace;
+      }
+
+      .fl {
+        display: flex;
+      }
+
+      .inside {
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Our policy consists of:</h2>
+    <div class="fl">
+      <ol class="inside">
+        <li><code>list-style-position: inside</code></li>
+        <li>Advice to the patient at every stage of the rehabilitation process,</li>
+        <li>Hard standards for quality control of medical and supplementary services.</li>
+        <li>Budget allocation for investment in education and professional development of the staff of the center,</li>
+        <li>Reliability of the work results of specialists is the main principle of rendering medical services.</li>
+      </ol>
+      <ol>
+        <li><code>list-style-position: outside; (default)</code></li>
+        <li>Advice to the patient at every stage of the rehabilitation process,</li>
+        <li>Hard standards for quality control of medical and supplementary services.</li>
+        <li>Budget allocation for investment in education and professional development of the staff of the center,</li>
+        <li>Reliability of the work results of specialists is the main principle of rendering medical services.</li>
+      </ol>
+    </div>
+    <h2>Company strategy</h2>
+    <div class="fl">
+      <ul class="inside">
+        <li><code>list-style-position: inside; </code></li>
+        <li>persistent and long-term improvement of the quality of medical services</li>
+        <li>
+          development of therapeutic protocols, taking into account the expanding types of pathology of patients in the
+          center
+        </li>
+        <li>flexibility and ability to adapt quickly to any clinically difficult cases</li>
+        <li>research and innovation</li>
+        <li>development and implementation of rehabilitation manipulation systems and new technologies</li>
+      </ul>
+      <ul>
+        <li><code>list-style-position: outside; (default)</code></li>
+        <li>persistent and long-term improvement of the quality of medical services</li>
+        <li>
+          development of therapeutic protocols, taking into account the expanding types of pathology of patients in the
+          center
+        </li>
+        <li>flexibility and ability to adapt quickly to any clinically difficult cases</li>
+        <li>research and innovation</li>
+        <li>development and implementation of rehabilitation manipulation systems and new technologies</li>
+      </ul>
+    </div>
+  </body>
+</html>

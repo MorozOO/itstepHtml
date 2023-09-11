@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 40px 10px 40px 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* task1 */
+.task1 {
+    margin-block: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 5px solid blueviolet;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clock_centr {
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.clock::before,
+.clock::after {
+    position: absolute;
+    content: "";
+    top: 142px;
+    width: 7px;
+    background-color: blueviolet;
+    transform-origin: center calc(100% - calc(10px / 2));
+    animation: anim infinite linear;
+}
+
+.clock::before {
+    height: 100px;
+    animation-duration: 1s;
+
+}
+
+.clock::after {
+    top: 45px;
+    height: 200px;
+    animation-duration: 60s;
+}
+
+@keyframes anim {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* task2 */
+.task2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    width: 300px;
+    height: 150px;
+    background-color: brown;
+    border: 3px solid rgb(87, 21, 21);
+    position: relative;
+    z-index: 2;
+
+}
+
+.block:hover {
+    animation: task2anim infinite linear;
+}
+
+@keyframes task2anim {
+    to {
+        transform: rotateY(-40deg);
+        /* Поворачиваем относительно оси Y */
+        transform-origin: left center;
+    }
+
+}
+
+.task2_text {
+    position: relative;
+    font-size: 40px;
+    z-index: 1;
+    top: -100px;
+}
+
+.left:hover {
+    animation: task2anim 2s;
+}

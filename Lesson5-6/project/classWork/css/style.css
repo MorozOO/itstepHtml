@@ -1,0 +1,75 @@
+.list {
+    list-style: none;
+}
+.list2{
+    list-style: none;
+}
+.list3{
+    list-style: none;
+}
+.list2 li::before{
+    content: "* ";
+    color: blue;
+
+}
+.list3 li::before{
+    content: "   ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin-right: 10px;
+}
+li {
+   list-style-image: url();
+}
+
+dd {
+    background-color: aqua;
+}
+dt{
+    background-color: aquamarine;
+}
+.text::before{
+    content: "start";
+    color: brown;
+}
+.text::after{
+    content: "end";
+    color: teal;
+}
+.list4 li{
+    /* list-style-image: url("/project/classWork/img/apple.png")    */
+    list-style: none;
+}
+.list4 li::before{
+    content: "";
+    background: url("../img/arrow_forward_right.png") center / 10px no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+/* .p1{
+    display: inline;
+}
+.p2{
+    display: inline;
+    
+} */
+.p1{
+    display: inline-block;
+    background-color: aqua;
+    height: 150px;
+}
+.p2{
+    display: inline-block;
+    background-color: blueviolet;
+    height: 150px;
+}
+.p3{
+    display: inline;
+    background-color: chocolate;
+    height: 150px;
+}

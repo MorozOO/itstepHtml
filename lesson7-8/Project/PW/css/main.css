@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    min-width: 1000px;
+    margin-inline: auto;
+    margin: 0 auto;
+}
+.header{
+    background-color:#ff6825;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.black{
+    color: #000;
+}
+.white{
+    color: #fff;
+}
+.header-title{
+    text-shadow: 0px 3px 4px #000;
+}
+.main {
+    padding: 20px 10%;
+}
+.main-top{
+    margin-bottom: 30px;
+}
+.main-bottom .title-main{
+    text-align: center;
+}
+.main-cards{
+    display: flex;
+    gap:32px;
+    justify-content: space-between;
+}
+.main-card{
+    flex: 1;
+    /* display: inline-block; */
+    width: 45%;
+    margin-top: 20px;
+}
+.title-main{
+    /* margin-left: 36px; */
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.youtube{
+    display: inline-block;
+    background-color: red;
+    padding: 12px 23px;
+    border-radius: 10px;
+    float: right;
+    margin-left: 15px ;
+}
+.youtube span{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid white;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+.s{float: right;}
+.card-title-container{
+    border-left:3px solid #3a3a3a9a;
+    border-right:3px solid #3a3a3a9a;
+    height: 120px;
+    border-radius: 0px 30px 0px 0px;
+    padding-top: 10px;
+}
+.orange{
+    background-color: #ff6825;
+}
+.red{
+    background-color: #990000;
+}
+.blue{
+    background-color: #1b3d89;
+}
+.purple{
+    background-color: #7521c4;
+}
+.green{
+    background-color: #18b430;
+}
+.card-title-label{
+    background-color:#ffce00 ;
+    width: 80%;
+    padding: 5px;
+    padding-left: 15px;
+    color: #000;
+    font-weight: 700;
+    font-size: 10px;
+    border-radius: 0px 40px 40px 0px;
+}
+.catr-title-main{
+    color: #fff;
+    font-size: medium;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.card-description div{    
+    text-align: right;
+}
+.card-description span{
+    font-weight: 900;
+    width: 100%;
+
+    
+}
+.footer{
+    background: lightgray;
+    border-top: 1px solid #000;
+}
+
+.column{
+    display: inline-block;
+    margin-left: 100px;
+}
+ul{
+    list-style: none;
+}
+.footer-title{
+    margin-left: 36px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.columns{
+    padding: 20px 30px;
+    display: flex;
+    /* gap:32px; */
+    justify-content: space-between;
+}
+.copirate{
+    width: 100%;
+    background-color: #000;
+    height:50px ;
+    color: #fff;
+    display: inline-block;
+   
+}
+.copirate-content-left{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px
+}
+.copirate-content-right{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px
+}

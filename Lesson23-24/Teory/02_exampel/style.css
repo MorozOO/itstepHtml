@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: pink;
+  flex-basis: 8rem;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.main__aside-left {
+  background-color: cyan;
+  flex-basis: 20%;
+}
+
+.main__page {
+  background-color: coral;
+  flex: 1 1 auto;
+}
+
+.main__aside-right {
+  background-color: lime;
+  flex-basis: 20%;
+}
+
+.footer {
+  background-color: gray;
+  flex-basis: 5rem;
+}
+
+@media screen and (max-width: 62em) {
+  .main__aside-right {
+    display: none;
+  }
+  .header{
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .main__aside-left {
+    flex-basis: 30%;
+  }
+  .header{
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .header{
+    background-color: blueviolet;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .main__page {
+    order: 3;
+  }
+
+  .main__aside-left {
+    order: 1;
+    min-height: 200px;
+  }
+
+  .main__aside-right {
+    order: 2;
+    display: block;
+    min-height: 150px;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  /* стилі для екранів, що мають мінімальну ширину 768px */
+}
+
+@media screen and (max-width: 1024px) {
+  /* стилі для екранів, що мають максимальну ширину 1024px */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* стилі для екранів, що мають ширину від 768px до 1024px */
+}
+
+@media screen and (min-resolution: 192dpi) {
+  /* стилі для екранів з високою щільністю пікселів */
+}
+
+@media screen and (orientation: landscape) {
+  /* ваші стилі тут */
+}
+
+@media screen and (orientation: portrait) {
+  /* стилі для екранів у вертикальному режимі */
+}

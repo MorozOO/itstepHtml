@@ -1,0 +1,100 @@
+.fragen {
+  background-color: var(--clr-grey-lighter);
+  // .fragen__container
+  &__container {
+  }
+  // .fragen__title
+  &__title {
+  }
+  // .fragen__subtitle
+  &__subtitle {
+  }
+  // .fragen__spoller-container
+  &__spoller-container {
+  }
+  // .fragen__spoller
+  &__spoller {
+  }
+}
+
+.spoller {
+  padding: rem(24);
+  border-bottom: 1px solid var(--clr-black-light);
+
+  // .spoller__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(16);
+    transition: 0.4s;
+    gap: rem(16);
+    [data-spoller="off"] & {
+      margin-bottom: 0;
+    }
+  }
+  // .spoller__title
+  &__title {
+    @include av("font-size", 24, 18, 1276, 480);
+    font-weight: 700;
+    &._anim-items {
+      opacity: 0;
+      transform: translateX(-80%);
+      transition: 1s;
+    }
+    &._anim-active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  // .spoller__btn
+  &__btn {
+    position: relative;
+    padding: rem(14);
+    border: 2px solid var(--clr-black-light);
+    border-radius: 50%;
+    cursor: pointer;
+    &::after,
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(15);
+      height: rem(2);
+      content: "";
+      background-color: var(--clr-black-light);
+      transition: transform 0.3s ease-out;
+      transform: translate(-50%);
+    }
+    &::after {
+      transform: translate(-50%) rotate(90deg);
+    }
+    [data-spoller="on"] &::after {
+      transform: translate(-50%) rotate(0deg);
+    }
+    &._anim-items {
+      opacity: 0;
+      transform: translateX(400%);
+      transition: 1.8s 0.4s;
+    }
+    &._anim-active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  // .spoller__text
+  &__text {
+    opacity: 1;
+    @include av("font-size", 16, 14, 1276, 480);
+    padding-right: rem(52);
+    color: var(--clr-silver);
+    font-weight: 400;
+    line-height: 1.5;
+    transition: 0.4s;
+
+    [data-spoller="off"] & {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

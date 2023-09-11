@@ -1,0 +1,18 @@
+.first{
+ list-style: upper-roman;
+ 
+}
+
+.third{
+list-style: lower-alpha;
+}
+li{
+    color: rgb(100, 51, 165);
+}
+li::marker{
+   color : black;
+   font-weight: 700;
+}
+h2{
+    font-weight: 700;
+}

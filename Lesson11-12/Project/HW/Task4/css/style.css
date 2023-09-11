@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.footer {
+    background: #2b4f6f;
+    padding-inline: 30px;
+    padding-block: 40px;
+}
+
+.footer__top {
+    height: 70%;
+    border-bottom: #fff solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+    padding-inline: 50px;
+    
+}
+
+.footer__bot {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+img {
+    height: 40px;
+}
+
+.social {
+    display: flex;
+    gap: 20px
+}
+.social__item{
+    height: 40px;
+    width: 40px;
+}
+.social__item:nth-child(1){
+    background-image: url("../img/fb_gray.png") ;
+    background-size: 40px;
+}
+.social__item:nth-child(1):hover{
+    background-image: url("../img/fb.png") ;
+    background-size: 40px;
+    transition: 0.7s;
+}
+.social__item:nth-child(2){
+    background-image: url("../img/insta_gray.png") ;
+    background-size: 40px;
+}
+.social__item:nth-child(2):hover{
+    background-image: url("../img/insta.png") ;
+    background-size: 40px;
+     transition: 0.7s;
+}
+.social__item:nth-child(3){
+    background-image: url("../img/youtube_gray.png") ;
+    background-size: 40px;
+}
+.social__item:nth-child(3):hover{
+    background-image: url("../img/youtube.png") ;
+    background-size: 40px;
+     transition: 0.7s;
+}

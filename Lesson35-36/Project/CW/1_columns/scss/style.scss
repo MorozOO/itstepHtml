@@ -1,0 +1,41 @@
+@import "null";
+@import "function";
+@import "mixin";
+
+.wrapper{
+    padding-top: rem(100);
+    @include container(rem(1200), rem(16));
+}
+
+.article-title{
+    column-span: all;
+    color: green;
+    font-size: rem(34);
+    margin-block: rem(8);
+    text-align: center;
+    background-color: lightblue;
+}
+.article{
+    break-inside: avoid;
+    margin-bottom: rem(8);
+    line-height: 1.2;
+    span{
+        color: blue;
+        font-size: rem(18);
+        font-weight: 700;
+    }
+}
+
+.container-article{
+    // column-count: 3;
+    // column-width: rem(200);
+    columns: 4 rem(300);
+    column-gap: rem(30);
+    column-rule: rem(10) dotted  brown;
+    // column-rule-width: rem(10);
+    // column-rule-style:dotted;
+    // column-rule-color: green;
+    // column-fill: balance;
+    // height: rem(500);
+
+}

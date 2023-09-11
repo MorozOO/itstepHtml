@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 62.5rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+button{height: 6.25rem;
+width: 11.25rem;
+background-color: blanchedalmond;
+border-radius: .4375rem;
+margin-top: 30px;
+}
+button:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}

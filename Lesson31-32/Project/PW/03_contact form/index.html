@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form">
+        <h2 class="form_title">Contact form</h2>
+
+        <div class="form_input">
+          <div class="input_item">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+          </div>
+          <div class="input_item">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </div>
+          <div class="input_item">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+          <div class="input_item">
+            <label for="name">Your gender</label>
+            <div class="radio_container">
+              <div class="radio_input">
+                <input id="male"  type="radio" name="gender" value="male">
+                <label for="male">He</label>
+              </div>
+              <div class="radio_input">
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">She</label>
+              </div>
+              <div class="radio_input">
+                <input id="other" type="radio" name="gender" value="other" checked>
+                <label for="other">They</label>
+              </div>
+            </div>
+          </div>
+          <div class="input_item">
+            <label for="salery">Select</label>
+            <select name="levelsalery" id="salery">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button type="submit">Send my message</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

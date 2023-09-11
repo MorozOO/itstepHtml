@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 75rem;
+}
+.container{
+    margin: 0 auto;
+    max-width: 62.5rem;
+    min-height: 25rem;
+    background-color: rgb(173, 116, 173);
+    padding: 3.125rem;
+}
+ul{
+    list-style: none;
+}
+li::before{
+    content: " ";
+    background-image: url("../img/owl.png") ;
+    display: inline-block;
+    width: .9375rem;
+    height: .9375rem;
+    position: relative;
+    left: -0.9375rem;
+}

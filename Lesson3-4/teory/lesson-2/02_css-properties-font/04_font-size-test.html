@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>font-size test</title>
+    <style>
+        body {
+            font-family: Calibri, Verdana, sans-serif;
+            font-size: 16pt;
+        }
+        em {font-weight: bold; color: #000;}
+        .first {
+            font-size: 1.2em;
+            color: red;
+        }
+        .second {
+            font-size: 1.2rem;
+            color: green;
+        }
+        .third {
+            font-size: 1.2vh;
+            color: cornflowerblue;
+        }
+        .percent {
+            font-size: 90%;
+            color: chocolate;
+        }
+        .parent {
+            font-size: 100%;
+            color: blueviolet;
+        }
+        .larger {
+            font-size: larger;
+        }
+        .smaller {
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>font-size test</h1>
+    <h2>Размер шрифта в различных единицах</h2>
+    <div class="standart">
+        <p><em>font-size: 16pt</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum id nemo velit blanditiis modi?</p>
+        <p>Voluptas repellat maxime, voluptatum ratione. Iusto odio sit voluptate voluptas nostrum blanditiis quisquam itaque earum!</p>
+    </div>
+    <div class="first">
+        <p><em>font-size: 1.2em</em> Dignissimos debitis ab nihil, eius ipsam commodi similique accusantium animi officiis? Assumenda harum omnis dignissimos?</p>
+        <p>Quae pariatur labore voluptas maiores veritatis, rerum, provident temporibus, unde cum corrupti dolore molestias quasi!</p>
+    </div>
+
+
+    <div class="second">
+        <p><em>font-size: 1.2rem</em> Mollitia facilis, commodi, quod doloribus quisquam fugiat tenetur repudiandae, molestias beatae excepturi atque eius hic.</p>
+        <p>Officia illum autem fugit, quia consequatur, architecto quas beatae quo nemo corporis ipsam, corrupti harum.</p>
+    </div>
+    <div class="third">
+        <p><em>font-size: 1.2vh</em> Hic impedit modi ipsum veritatis, eveniet, libero ullam nostrum necessitatibus. Obcaecati assumenda, consequatur qui eaque.</p>
+        <p>Quia dolor laudantium dolorem similique, aperiam maxime, ratione alias optio rerum tempore. Asperiores, fugit, magni.</p>
+    </div>
+    <div class="percent">
+        <p><em>font-size: 90%</em> Id, debitis, molestias. Voluptatem sequi aut deleniti eaque, iste id impedit. Molestias, laborum nam suscipit!</p>
+        <p>Perferendis dicta, dolor illum, quidem voluptatum tenetur quae nulla quas, maxime ex odit totam inventore!</p>
+    </div>
+    <h2>Абсолютный размер</h2>
+    <p style="font-size: xx-small; color: #900;"><em>font-size: xx-small</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nisi illum ratione ipsum reprehenderit dignissimos!</p>
+    <p style="font-size: small; color: #090;"><em>font-size: small</em> Aliquam iure doloremque nesciunt veritatis animi soluta, delectus, facere, totam molestiae eligendi doloribus magni reiciendis!</p>
+    <p style="font-size: medium; color: #909;"><em>font-size: medium</em> Nobis, saepe deleniti. Error voluptate quis iusto nemo alias magnam, vel autem obcaecati, quo temporibus!</p>
+    <p style="font-size: large; color: #099;"><em>font-size: large</em> Repellendus aspernatur voluptas quibusdam eius, consequuntur natus tempora voluptatibus neque ad excepturi repellat. Quas, pariatur.</p>
+    <p style="font-size: x-large; color: #009;"><em>font-size: x-large</em> Labore doloremque, provident minus beatae similique cupiditate consectetur ea ad, porro quos necessitatibus accusantium officia.</p>
+    <p style="font-size: xx-large; color: #f09;"><em>font-size: xx-large</em> Quod consequatur eum molestias consequuntur molestiae suscipit voluptates officia? Possimus facere ab nulla! Amet, maiores!</p>
+    <h2>Относительный размер</h2>
+    <div class="parent">
+        <p class="smaller"><em>font-size: smaller</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, soluta dignissimos ipsa ad earum a pariatur nostrum ducimus. Iure, harum!</p>
+        <p><em>Исходный размер</em> Quos atque autem praesentium repellat amet consequatur dignissimos, veritatis nulla quam aliquid sit et quaerat suscipit perferendis, repudiandae aut ad.</p>
+        <p class="larger"><em>font-size: larger</em> Porro fuga voluptates id cumque, iure in assumenda rem, sapiente quia delectus error cupiditate quod, eum et! At, a, tempore.</p>
+    </div>
+
+</body>
+
+</html>

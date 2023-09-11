@@ -1,0 +1,43 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li,ol{
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+.block{
+    width: min(90%, 1000px);
+    margin-inline: auto;
+    background-color: blueviolet;
+    color: white;
+    padding: 2rem;
+    min-height: 600px;
+}
+
+.inside{
+    max-width: 800px;
+    background-color: yellowgreen;
+    padding: 1rem;
+}
+.inside h1{
+    margin-bottom: 1.5rem;
+}
+.inside p:not(:last-child){
+    margin-bottom: 1rem;
+}
+/* 
+all- за замовчуванням 
+print - для друку
+screen - для моніторів
+speack - для синтезаторів мови
+*/
+@media screen and (max-width: 800px){
+    
+} 

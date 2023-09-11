@@ -1,0 +1,10 @@
+//REM
+@function rem($px, $current: 16) {
+  $result: ($px / $current) + rem;
+  @return $result;
+}
+//EM
+@function em($px, $current: 16) {
+  $result: ($px / $current) + em;
+  @return $result;
+}

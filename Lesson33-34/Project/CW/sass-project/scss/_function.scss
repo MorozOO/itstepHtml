@@ -1,0 +1,17 @@
+
+@function rem($px){
+    $result:math.div($px, 16) + rem;
+    @return $result;
+}
+@function toEm($px){
+    $result:math.div($px, 16) + em;
+    @return $result;
+}
+@function sum($numbers...){
+    $sum: 0;
+
+    @each $num in $numbers{
+        $sum: $sum+$num;
+    }
+    @return $sum;
+}

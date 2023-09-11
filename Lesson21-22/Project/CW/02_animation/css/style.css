@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 100px 10px 40px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.title{
+  font-size: 40px;
+  font-weight: 900;
+  animation-name: button;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  /* повторення анімації: постійне */
+  animation-iteration-count: infinite;
+  /* порядок відтворення кадрів анімації */
+  animation-direction: alternate;
+  /* animation-fill-mode: backwards; */
+}
+@keyframes button {
+  /* from{
+/* font-weight: 900; 
+  }
+  to{
+    /* font-weight: 400; 
+    font-size: 20px;
+  } */
+  0%{
+    font-size: 20px;
+  }
+  50%{
+    transform: translate(100px);
+    font-size: 40px;
+  }
+  100%{
+    font-size: 20px;
+  }
+}
+.bols{
+  display: flex;
+  gap:50px
+}
+.bol{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: bols 0.8s  alternate infinite;
+}
+
+.bol:nth-child(2){
+  animation-delay: 0.125s;
+}
+.bol:nth-child(3){
+  animation-delay: 0.325s;
+}
+.bol:nth-child(4){
+  animation-delay: 0.625s;
+}
+.bol:nth-child(5){
+  animation-delay: 0.925s;
+}
+@keyframes bols {
+  0%{
+    transform: scale(2);  
+    background-color: blue;
+    border-radius: 0%;
+  }
+  100%{
+    transform: scale(1) translateY(100px) ;  
+    
+  }
+}
+.buttons{
+  margin-top: 200px;
+  display: flex;
+  gap: 3rem;
+
+}
+.button{
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-btn);
+  border-radius: 50%;
+  position: relative;
+}
+.button::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border:1px solid var(--color-btn);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+to{
+  transform:  scale(2);
+  opacity: 0;
+}  
+}

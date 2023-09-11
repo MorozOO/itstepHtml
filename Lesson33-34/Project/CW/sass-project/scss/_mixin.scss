@@ -1,0 +1,44 @@
+@mixin container($max-width, $padding) {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    padding: $padding;
+}
+
+@mixin button($fz: 1rem, $tcolor: black) {
+    display: inline-block;
+    padding: .5em 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    background-color: goldenrod;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: $fz;
+    color: $tcolor;
+
+    &:hover {
+        background-color: gold;
+    }
+
+}
+
+@mixin gridContainer($mod: "fit", $min: 300px, $max: 1fr) {
+    display: grid;
+    grid-template-columns: repeat(auto-#{$mod}, minmax($min, $max));
+    gap: 1.5rem;
+}
+
+@mixin animation($duration) {
+    $name: anim-#{unique-id()};
+
+    @keyframes #{$name} {
+        @content ;
+    }
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+}

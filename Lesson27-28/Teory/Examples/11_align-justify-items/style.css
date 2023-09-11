@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  /* justify-items: start; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+  /* justify-items: strech; */
+
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* align-items: strech; */
+
+  /* place-items: center; */
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #0d233d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  border-radius: 3px;
+  background-color: #482880;
+  color: #ffffff;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.grid div:nth-child(odd) {
+  background-color: #1769aa;
+}
+
+.item-1 {
+  align-self: stretch;
+  justify-self: stretch;
+}

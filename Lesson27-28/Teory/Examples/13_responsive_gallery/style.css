@@ -1,0 +1,35 @@
+.gallery {
+}
+
+.image {
+}
+
+.image img {
+}
+
+.image img:hover {
+}
+
+.image:first-child {
+}
+
+.image:nth-child(2n + 1) {
+}
+
+.image:nth-child(4n + 6) {
+}
+
+@media screen and (max-width: 61.25em) {
+  .gallery {
+  }
+}
+@media screen and (max-width: 48.75rem) {
+  .gallery {
+  }
+  .image {
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .gallery {
+  }
+}

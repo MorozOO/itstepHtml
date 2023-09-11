@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    padding: 1rem;
+    padding-top: 2rem;
+    min-height: 100vh;
+    max-width: 75rem;
+    margin-inline: auto;
+  }
+
+  .form{
+    margin: 0 auto;
+    max-width: 37.5rem;
+    background-image: linear-gradient(135deg, #e3b4fd 0%, #4f0682 100%);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: grid;
+    gap: 16px;
+  }
+
+  .form-title{
+    color: rgb(28, 13, 92);
+    font-weight: 600;
+  }
+
+  .input-element{
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+  }
+  
+  .input-element label{
+   color: rgb(28, 13, 92);
+   font-size: 1.125rem;
+  }
+  .input-element input{
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+  }
+  .input-element textarea{
+    padding: 0.5rem;
+    height: 6.25rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+  }
+  .formbutton{
+    display: flex;
+    gap: 1.5rem;
+  }
+  .formbutton button{
+    padding: .5rem 1rem;
+    background-image: linear-gradient(135deg, #080343 0%, #08a7f6 100%);
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 100vmax;      
+  }
+  .input-element h4{
+    color: rgb(28, 13, 92);
+   font-size: 1.125rem;
+  }
+
+  .radio_container{
+    display: flex;
+    gap: 24px;
+  }
+
+  .radio_input{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+  .radio_input label{
+    color: black;
+    display: flex;
+    gap: .5rem;
+  }
+  .radio_input input{
+    display: none;
+  }
+
+
+  .radio_input label::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);      
+    border-radius: 50%;
+    border: .125rem solid white;
+  }
+  input[type="radio"]:checked + label::before{
+    background-color: rgb(28, 13, 92);
+    box-shadow: 0px 0px 15px #462691;
+
+  }
+  .checkbox_input{
+    margin-bottom: .5rem;
+  }
+  .checkbox_input input{
+    display: none;
+  }
+  .checkbox_input label::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(255, 255, 255);      
+    border-radius: 40%;
+    border: .125rem solid white;
+  }
+  input[type="checkbox"]:checked + label::before{
+    background-color: rgb(28, 13, 92);
+    box-shadow: 0px 0px 15px #462691;
+
+  }
+ 
+  .input-element select{
+    justify-self: start;
+    width: 9.375rem;
+  }

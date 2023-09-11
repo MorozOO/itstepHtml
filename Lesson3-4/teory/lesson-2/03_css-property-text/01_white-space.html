@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>White space</title>
+    <style>
+      .p1 {
+        white-space: normal; /* За замовченням встановлює автоматичне перенесення
+                               слів при досягненні правого краю браузера.*/
+      }
+      .p2 {
+        white-space: nowrap; /* не враховує пробіли та перенесення рядків у коді HTML,
+                               і весь текст відображається як один рядок. При цьому може
+                               бути додана горизонтальна смуга прокручування, якщо текст
+                               не поміщається поширині у батьківському контейнері. Тільки додавання
+                               тегу <br> переносить текст на новий рядок. */
+      }
+      .p3 {
+        white-space: pre; /* відображає текст з урахуванням всіх пробілів, табуляцій та переносів,
+                             які є у коді HTML. Для надто довгого рядка в браузері буде додано горизонтальну
+                             смугу прокручування. */
+      }
+      .p4 {
+        white-space: pre-line; /* не враховує пробілів, а сам текст буде перенесено на наступний рядок,
+                                 якщо він не поміщається у батьківському контейнері. */
+      }
+      .p5 {
+        white-space: pre-wrap; /* p зберігає всі прогалини та переноси, які були в текстовому редакторі,
+                                 але якщо рядок поширині не поміщається в батьківський контейнер, текст 
+                                 автоматично буде перенесений на наступний рядок */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Відповідає за відображення пробілів між словами. За замовченням
+    встановлює автоматичне перенесення слів при досягненні правого краю браузера.
+  -->
+    <p class="p1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+    </p>
+    <p class="p2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+    </p>
+    <p class="p3">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+    </p>
+    <p class="p4">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+    </p>
+    <p class="p5">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum tenetur eaque non eligendi architecto
+      vitae voluptas distinctio assumenda adipisci temporibus dolor quis cum eius quibusdam eveniet impedit, ad ratione.
+    </p>
+  </body>
+</html>

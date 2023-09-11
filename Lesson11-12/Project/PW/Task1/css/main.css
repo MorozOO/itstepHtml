@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/bg_1.jpg) fixed;
+}
+.wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container{
+    background: rgba(17, 66, 60, 0.678);
+    padding: 10%;
+    
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

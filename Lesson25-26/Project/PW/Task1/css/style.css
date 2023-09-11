@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .table th{
+    border: 1px solid #000;
+  }
+  .table td{
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: bottom;
+  }

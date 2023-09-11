@@ -1,0 +1,41 @@
+.padding-block-container {
+  @include av("padding-block", 100, 56, 1276, 480);
+}
+
+.button {
+  padding: rem(24) rem(42);
+  border-radius: rem(8);
+  color: var(--clr-white);
+  font-weight: 600;
+  @include av("font-size", 16, 14, 1276, 480);
+  text-transform: uppercase;
+  background: var(--clr-green-light);
+  transition: filter 0.4s;
+  &:hover {
+    filter: hue-rotate(10deg);
+  }
+  @include animate-on-add(120%);
+}
+
+.title {
+  color: var(--clr-black-light);
+  @include av("font-size", 32, 24, 1276, 480);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  &:not(:last-child) {
+    margin-bottom: rem(8);
+  }
+  @include animate-on-add(120%);
+}
+.subtitle {
+  color: var(--clr-silver);
+  font-weight: 500;
+  @include av("font-size", 16, 12, 1276, 480);
+  line-height: 2;
+  text-align: center;
+  &:not(:last-child) {
+    @include av("margin-bottom", 64, 32, 1276, 480);
+  }
+  @include animate-on-add(120%);
+}

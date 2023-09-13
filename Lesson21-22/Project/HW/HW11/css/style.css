@@ -124,18 +124,42 @@ h2 {
 
 /* task3 */
 .container{
-    display: grid;
-    grid-template-columns: repeat(2, 31.25rem);
-    gap:0px;
+   display: flex;
+   flex-direction: column;
 }
 .card{
+    display: flex;
     height: 15.625rem;
     width: 31.25rem;
-    border: 1px solid #000;
-    background: url("../img/fon.jpg") cover  no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(51, 51, 51);
+    background: rgb(233, 232, 232);
+    overflow:hidden;
 }
-
-.card:nth-child(2){
-    background: url("../img/fon.jpg") cover  no-repeat;
-    
+.card img{
+    width: 100%;
+    height: 100%;
 }
+.row{
+    display: flex;
+    transition: .3s;
+}
+.row:hover{
+   filter: brightness(.5);
+}
+.row:hover img{
+ animation: zoomin 1s;
+ 
+}
+@keyframes zoomin {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }

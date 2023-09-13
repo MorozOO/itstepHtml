@@ -88,6 +88,7 @@ h2 {
 .blocks {
     display: flex;
     justify-content: center;
+    perspective: 600px;
 }
 
 .block {
@@ -97,29 +98,22 @@ h2 {
     border: 3px solid rgb(87, 21, 21);
     position: relative;
     z-index: 2;
-
+    transition: all cubic-bezier(0.3, 0.9 0.5, 1);
 }
 
-.block:hover {
-    animation: task2anim infinite linear;
+.blocks:hover .left {
+    transform: rotateY(40deg);
+    transform-origin: left center;
 }
 
-@keyframes task2anim {
-    to {
-        transform: rotateY(-40deg);
-        /* Поворачиваем относительно оси Y */
-        transform-origin: left center;
-    }
-
+.blocks:hover .right {
+    transform: rotateY(3200deg);
+    transform-origin: right center;
 }
 
 .task2_text {
     position: relative;
     font-size: 40px;
-    z-index: 1;
+    z-index: -1;
     top: -100px;
-}
-
-.left:hover {
-    animation: task2anim 2s;
 }

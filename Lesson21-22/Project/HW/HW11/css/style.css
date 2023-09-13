@@ -17,7 +17,10 @@ body {
 
 h2 {
     text-align: center;
-    margin-top: 30px;
+    margin-block: 30px;
+    font-size: 4rem;
+    color: black;
+    text-shadow: 5px 5px gray ;
 }
 
 /* task1 */
@@ -86,6 +89,7 @@ h2 {
 }
 
 .blocks {
+    margin-block: 2rem;
     display: flex;
     justify-content: center;
     perspective: 600px;
@@ -102,12 +106,12 @@ h2 {
 }
 
 .blocks:hover .left {
-    transform: rotateY(40deg);
+    transform: rotateY(70deg);
     transform-origin: left center;
 }
 
 .blocks:hover .right {
-    transform: rotateY(3200deg);
+    transform: rotateY(290deg);
     transform-origin: right center;
 }
 
@@ -115,5 +119,23 @@ h2 {
     position: relative;
     font-size: 40px;
     z-index: -1;
-    top: -100px;
+    top: -125px;
+}
+
+/* task3 */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 31.25rem);
+    gap:0px;
+}
+.card{
+    height: 15.625rem;
+    width: 31.25rem;
+    border: 1px solid #000;
+    background: url("../img/fon.jpg") cover  no-repeat;
+}
+
+.card:nth-child(2){
+    background: url("../img/fon.jpg") cover  no-repeat;
+    
 }

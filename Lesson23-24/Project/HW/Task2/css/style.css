@@ -1,74 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: lightgray;
-    font-family: 'Familjen Grotesk', sans-serif; 
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 1.2rem;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    
+
 }
-.container{
+
+.container {
     margin: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.img_container{
+
+.img_container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.image{
+
+.image {
     display: flex;
     flex-direction: column;
     width: 100%;
     border-radius: .625rem;
     overflow: hidden;
-    box-shadow: 0 0 2px #fff;
 }
-.image span{
+
+.image span {
     text-align: right;
-    background-color:#37516c ;
+    background-color: #37516c;
     padding-block: 10px;
     padding-inline: 1rem;
     color: #fff;
 }
-p{
+
+p {
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px){
-    .img_container{
-        flex-direction: row;
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+        "text text"
+        "img_lefr img_right"
+        "text2 text2";
     }
-}
-@media screen and (min-width: 800px) {
-    .container{
-        /* align-content: stretch; */
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
+    .text-top{
+grid-area: text;
     }
-    .text{
-        width: 67%;
+    .image-top{
+        grid-area: img_lefr;
     }
-    
-    .img_container{
+    .image-botom{
+        grid-area: img_right;
+    }
+    .text-bottom {
         
-        flex-direction: column;  
-        width: 300px;
-         
+grid-area: text2;
     }
-    .image{
-        width: 30%;
+
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
+
+    .text {
+        
+    }
+
+    .image-botom{
+        order:4
+    }
+
+    
 }
